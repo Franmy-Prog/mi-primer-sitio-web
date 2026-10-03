@@ -86,9 +86,12 @@
                 y publicada utilizando GitHub Pages.
             </p>
 
-            <button class="boton" onclick="saludar()">
+            <button class="boton" onclick="cambiarMensaje()">
                 Haz clic aquí
             </button>
+            
+            <p id="mensaje"></p>
+
         </div>
     </main>
 
@@ -97,10 +100,11 @@
     </footer>
 
     <script>
-    function saludar() {
-        alert("¡Hola! 🎉 Mi página tiene JavaScript.");
-    }
-</script>
+    function cambiarMensaje() {
+    document.getElementById("mensaje").textContent =
+        "¡Lo lograste! 🚀 JavaScript cambió esta página.";
+                              }
+    </script>
 
 </body>
 </html>
