@@ -86,11 +86,11 @@
                 y publicada utilizando GitHub Pages.
             </p>
 
-            <button class="boton" onclick="cambiarMensaje()">
-                Haz clic aquí
+            <h2 id="contador">0</h2>
+
+            <button class="boton" onclick="aumentarContador()">
+                +1
             </button>
-            
-            <p id="mensaje"></p>
 
         </div>
     </main>
@@ -100,10 +100,13 @@
     </footer>
 
     <script>
-    function cambiarMensaje() {
-    document.getElementById("mensaje").textContent =
-        "¡Lo lograste! 🚀 JavaScript cambió esta página.";
-                              }
+    let contador = 0;
+        
+        function aumentarContador() {
+            contador = contador + 1;
+        
+            document.getElementById("contador").textContent = contador;
+        }
     </script>
 
 </body>
