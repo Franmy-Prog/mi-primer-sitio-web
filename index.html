@@ -3,20 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi primera página</title>
+
+    <title>Mi primer sitio web</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            color: #222;
+        }
+
+        header {
+            background: #24292f;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .tarjeta {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #0969da;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .boton:hover {
+            background: #0550ae;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>¡Hola, GitHub!</h1>
 
-    <p>
-        Esta es mi primera página web creada directamente desde GitHub.
-    </p>
+    <header>
+        <h1>¡Hola! 👋</h1>
+        <p>Bienvenido a mi primer sitio web</p>
+    </header>
 
-    <h2>Estoy aprendiendo</h2>
+    <main>
+        <div class="tarjeta">
+            <h2>Estoy aprendiendo programación 🚀</h2>
 
-    <p>
-        HTML, GitHub y Git Pages.
-    </p>
+            <p>
+                Esta página fue creada con HTML y CSS
+                y publicada utilizando GitHub Pages.
+            </p>
+
+            <a class="boton" href="https://github.com/">
+                Visitar GitHub
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        Mi primer proyecto web © 2026
+    </footer>
+
 </body>
 </html>
